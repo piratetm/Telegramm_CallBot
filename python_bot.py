@@ -1,5 +1,5 @@
 import telebot
-bot = telebot.TeleBot('1658215806:AAETj5KBEi8Sv4wBnnrcKW7BY7zuuq9hoNk')
+bot = telebot.TeleBot('1661807622:AAEvPJrMSFILvWdE3ZTNi2gZ8ORYXYATdwc')
 from libs.zadarma import api
 
 @bot.message_handler(commands=['start', 'help'])
