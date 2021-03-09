@@ -8,17 +8,17 @@ if "true" in f.read():
     bot = telebot.TeleBot('1661807622:AAEvPJrMSFILvWdE3ZTNi2gZ8ORYXYATdwc')
 else:
     print("Ветка не является мастером! Включаю токен для тестирования!")
-    bot = telebot.TeleBot('1658215806:AAETj5KBEi8Sv4wBnnrcKW7BY7zuuq9hoNk')
+    bot = telebot.TeleBot('946918872:AAFqe6cFNRUeJCEaY-yJYRvXe_DzZrsohkE')
 
-def zvonok_api():
-    if __name__ == '__main__':
-    z_api = api.ZadarmaAPI(key='YOU_KEY', secret='YOUR_SECRET')
-    # get tariff information
-    z_api.call('/v1/tariff/')
-    # set callerid for your sip number
-    z_api.call('/v1/sip/callerid/', {'id': '1234567', 'number': '71234567890'}, 'PUT')
-    # get information about coast
-    z_api.call('/v1/info/price/', {'number': '71234567891', 'caller_id': '71234567890'})
+#def zvonok_api():
+#    if __name__ == '__main__':
+#    z_api = api.ZadarmaAPI(key='YOU_KEY', secret='YOUR_SECRET')
+#    # get tariff information
+#    z_api.call('/v1/tariff/')
+#    # set callerid for your sip number 
+#    z_api.call('/v1/sip/callerid/', {'id': '1234567', 'number': '71234567890'}, 'PUT')
+#    # get information about coast
+#    z_api.call('/v1/info/price/', {'number': '71234567891', 'caller_id': '71234567890'})
 
 
 @bot.message_handler(commands=['start', 'help'])
