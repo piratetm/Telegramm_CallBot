@@ -16,4 +16,4 @@ def get_text_messages(message):
 
 
 
-bot.polling(none_stop=True)first_name
+bot.polling(none_stop=True)
