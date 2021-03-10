@@ -21,6 +21,8 @@ else:
 #    z_api.call('/v1/info/price/', {'number': '71234567891', 'caller_id': '71234567890'})
 
 
+
+
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
     bot.reply_to(message, f'Я бот. Приятно познакомиться, {message.from_user.first_name}')
