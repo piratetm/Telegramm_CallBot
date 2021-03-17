@@ -1,17 +1,18 @@
-import os, requests
+from twilio.rest import Client
+
+# Your Account SID from twilio.com/console
+account_sid = "ACd5f8c7c48f9d99295a43c96b9f10c623"
+# Your Auth Token from twilio.com/console
+auth_token  = "f6944916f27ab8c85689a618d9121e44"
+
+client = Client(account_sid, auth_token)
+call = client.calls.create(
+    to="+79992115175", 
+    from_="+12692485119",
+    url="voice.xml"
+)
 
 
-   operation=genCall
-   sipuid="0042656976"
-   password="VaLiUnOv1"
-   SrcPhone="0042656976@sipnet.ru"
-   DstPhone="79952354128"
-   [Delay=1]
-   [prompt=<ссылка на звуковой файл приветствия>]
-   [format={0,1,2}]
-   [lang={ru}]
-url = "https://api.sipnet.ru/cgi-bin/Exchange.dll/sip_balance?operation=balance&sipuid=" + sipuid + "&password=" + password
-#   https://api.sipnet.ru/cgi-bin/Exchange.dll/sip_balance?operation=genCall&sipuid=0042656976&password=VaLiUnOv1&SrcPhone=0042656976@sipnet.ru&DstPhone=79952354128
-
+print(call.sid)
 
 
