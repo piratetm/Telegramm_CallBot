@@ -5,10 +5,10 @@ from libs.zadarma import api
 f = open('.its_master.txt')
 if "true" in f.read():
     print("Ветка является мастером! Включаю основной токен!")
-    bot = telebot.TeleBot('1661807622:AAEvPJrMSFILvWdE3ZTNi2gZ8ORYXYATdwc')
+    bot = telebot.TeleBot('$TOKEN')
 else:
     print("Ветка не является мастером! Включаю токен для тестирования!")
-    bot = telebot.TeleBot('946918872:AAFqe6cFNRUeJCEaY-yJYRvXe_DzZrsohkE')
+    bot = telebot.TeleBot('$TOKEN_TEST')
 
 #def zvonok_api():
 #    if __name__ == '__main__':
