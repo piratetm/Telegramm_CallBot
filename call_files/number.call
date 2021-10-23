@@ -1,0 +1,8 @@
+Channel: PJSIP/"79992115175"@sipnet
+Callerid: 79992115175
+Extension: s
+MaxRetries: 1
+RetryTime: 0
+WaitTime: 60
+Context: said2
+Priority: 1 
